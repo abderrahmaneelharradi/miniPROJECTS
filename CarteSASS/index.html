@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cards-container">
+        <!-- Basic Card -->
+        <article class="card card--basic">
+            <header class="card__header">
+                <h2 class="card__title">Basic</h2>
+                <p class="card__price">$9.99<span class="card__price-period">/month</span></p>
+            </header>
+            <div class="card__body">
+                <ul class="card__features">
+                    <li class="card__feature">✓ 10 products</li>
+                    <li class="card__feature">✓ Basic support</li>
+                    <li class="card__feature">✓ Monthly updates</li>
+                </ul>
+            </div>
+            <footer class="card__footer">
+                <button class="card__button">Choose plan</button>
+            </footer>
+        </article>
+
+        <!-- Premium Card -->
+        <article class="card card--premium">
+            <header class="card__header">
+                <h2 class="card__title">Premium</h2>
+                <p class="card__price">$29.99<span class="card__price-period">/month</span></p>
+            </header>
+            <div class="card__body">
+                <ul class="card__features">
+                    <li class="card__feature">✓ Unlimited products</li>
+                    <li class="card__feature">✓ Support 24/7</li>
+                    <li class="card__feature">✓ Weekly updates</li>
+                    <li class="card__feature">✓ Early Access</li>
+                </ul>
+            </div>
+            <footer class="card__footer">
+                <button class="card__button">Choose plan</button>
+            </footer>
+        </article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+.card {
+  width: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+.card__header {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card__price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0 0;
+}
+.card__price span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+.card__price-period {
+  color: white;
+}
+.card__body {
+  padding: 2rem;
+  flex-grow: 1;
+  background-color: white;
+}
+.card__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card__feature {
+  padding: 0.5rem 0;
+  color: #2c3e50;
+}
+.card__footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+}
+.card__button {
+  background-color: rgb(27, 43, 97);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card__button:hover {
+  background-color: #101939;
+}
+.card--basic .card__header {
+  background-color: rgb(27, 43, 97);
+  color: white;
+}
+.card--basic .card__button {
+  background-color: rgb(27, 43, 97);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.card--basic .card__button:hover {
+  background-color: #101939;
+}
+.card--premium .card__header {
+  background-color: #0b582b;
+  color: white;
+}
+.card--premium .card__button {
+  background-color: #0b582b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.card--premium .card__button:hover {
+  background-color: #052b15;
+}
+@media (max-width: 768px) {
+  .card--premium {
+    transform: none;
+  }
+}/*# sourceMappingURL=style.css.map */
