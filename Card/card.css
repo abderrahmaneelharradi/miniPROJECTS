@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom right, white, #00428c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imgs {
+    display: flex;
+    width: 800px; 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(138, 135, 135, 0.2);
+}
+
+.perfume {
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+
+.product-container {
+    padding: 20px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.brand-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 30px;
+    color: black;
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.1;
+}
+
+.product-description {
+    font-size: 14px;
+    color: grey;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.product-price {
+    font-size: 30px;
+    color: #00428c;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.product-oldprice {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.add-to-cart {
+    background-color: #00428c;
+    color: white;
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    margin-right: 8px;
+}
+
+.add-to-cart:hover {
+    background-color: #062446;
+}
+
+@media (max-width: 768px) {
+    .imgs {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .perfume {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .product-container {
+        width: 100%;
+    }
+}
